@@ -1,0 +1,17 @@
+project_id = "dkzwefggrfedukcrxopq"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[functions.build-app]
+verify_jwt = false
+
+[functions.codemagic-webhook]
+verify_jwt = false
+
+[functions.init-template-repo]
+verify_jwt = false
